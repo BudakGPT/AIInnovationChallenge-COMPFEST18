@@ -1,0 +1,8 @@
+<svg width="1200" height="58" viewBox="0 0 1200 58" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="0 of 4 deliverables complete">
+  <text x="24" y="20" font-family="'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#8B949E">DELIVERABLES</text>
+  <text x="1176" y="20" font-family="'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3" text-anchor="end">0 / 4 &#183; 0%</text>
+  <rect x="24" y="34" width="1152" height="10" rx="5" fill="#1C2128"/>
+  <rect x="24" y="34" width="0" height="10" rx="5" fill="#DC2F5A">
+    <animate attributeName="width" from="0" to="0" dur="0.9s" fill="freeze"/>
+  </rect>
+</svg>

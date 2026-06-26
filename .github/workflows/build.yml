@@ -1,0 +1,48 @@
+name: Build tracker README
+
+# Regenerates README.md (timeline, countdown, progress) from competition.yml.
+on:
+  push:
+    branches: [main]
+    paths:
+      - competition.yml
+      - scripts/render.py
+      - .github/workflows/build.yml
+  schedule:
+    - cron: "17 0 * * *"   # daily ~00:17 UTC so "days left" stays current
+  workflow_dispatch:        # manual "Run workflow" button
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-readme
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install pyyaml
+
+      - name: Render README
+        run: python scripts/render.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain README.md assets/progress.svg)" ]; then
+            git add README.md assets/progress.svg
+            git commit -m "chore: auto-render tracker dashboard"
+            git push
+          else
+            echo "No changes."
+          fi

@@ -1,0 +1,58 @@
+# =============================================================================
+#  COMPFEST 18 - AI Innovation Challenge tracker. Edit this file; the README
+#  dashboard regenerates itself. Never hand-edit the AUTO block in README.md.
+# =============================================================================
+
+name: "AI Innovation Challenge"
+organizer: "COMPFEST 18"
+tagline: "AI for the Backbone of the Economy. Building applied AI for manufacturing, logistics, and commerce."
+
+# Registration open, preliminary work period underway. Team and subtheme not locked.
+status: active
+
+theme:
+  accent: "DC2F5A"        # COMPFEST 18 crimson
+  banner: ""
+
+links:
+  registration: "https://compfest.id/competition/aic"
+  website: "https://compfest.id"
+  devpost: ""
+  code: ""                # the project repo, once created (private during, public after)
+  slides: ""
+  demo: ""
+
+# Official key dates. Registration opened June 17 (done).
+timeline:
+  - milestone: "Registration Opens"
+    date: 2026-06-17
+    done: true
+  - milestone: "Registration Closes"
+    date: 2026-07-18
+    done: false
+  - milestone: "AIC Talks"
+    date: 2026-07-25
+    done: false
+  - milestone: "Preliminary Submission"
+    date: 2026-08-25
+    done: false
+  - milestone: "Finalist Announcement"
+    date: 2026-09-11
+    done: false
+  - milestone: "Final Hackathon"
+    date: 2026-09-26
+    done: false
+  - milestone: "Live Pitching & Awarding"
+    date: 2026-09-27
+    done: false
+
+# Preliminary round (penyisihan) required deliverables.
+deliverables:
+  - name: "Public GitHub repo (README + docker compose)"
+    done: false
+  - name: "Proof-of-work video (unlisted, max 7 min)"
+    done: false
+  - name: "Promo video (public, max 5 min)"
+    done: false
+  - name: "Proposal PDF (max 20 pages)"
+    done: false
