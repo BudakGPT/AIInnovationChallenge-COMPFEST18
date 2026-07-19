@@ -3,7 +3,7 @@
 
 <p align="center"><img src="assets/header.svg" alt="AI Innovation Challenge" width="100%"></p>
 
-> **Registration Closes** is due today (2026-07-18).
+> **Registration Closes** is overdue (was due 2026-07-18).
 
 ## Timeline
 
@@ -39,7 +39,7 @@ gantt
 | Registration | https://compfest.id/competition/aic |
 | Event site | https://compfest.id |
 
-<div align="right"><sub>Last updated 2026-07-18</sub></div>
+<div align="right"><sub>Last updated 2026-07-19</sub></div>
 
 <!-- AUTO:END -->
 
