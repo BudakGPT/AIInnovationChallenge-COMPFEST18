@@ -39,7 +39,7 @@ gantt
 | Registration | https://compfest.id/competition/aic |
 | Event site | https://compfest.id |
 
-<div align="right"><sub>Last updated 2026-09-09</sub></div>
+<div align="right"><sub>Last updated 2026-09-10</sub></div>
 
 <!-- AUTO:END -->
 
